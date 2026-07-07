@@ -1,0 +1,112 @@
+1. learn : 
+   	Reading text files
+	Reading PDFs
+	Reading DOCX
+	String methods
+	Regular Expressions (Regex)
+	Lists and Dictionaries
+	JSON
+
+	Example skills:
+
+	Read PDF
+	↓
+	Extract text
+	↓
+	Split paragraphs
+	↓
+	Remove unwanted spaces
+	↓
+	Store cleaned text
+
+	Libraries :
+
+	PyMuPDF (fitz)
+	pdfplumber
+	python-docx
+	re
+	json
+
+2. Transformers
+What is Attention?
+Self Attention
+Multi Head Attention
+Encoder
+Decoder
+Positional Encoding
+
+3. LLMs
+What is an LLM?
+Context Window
+Tokens
+Temperature
+Top-k
+Top-p
+Hallucination
+Prompt Engineering
+Zero-shot
+One-shot
+Few-shot
+Chain-of-Thought (understand conceptually)
+System Prompt
+User Prompt
+
+4. text summarization
+i. Extractive Summarization
+	Algorithms:
+		TextRank
+		TF-IDF
+		LexRank
+ii. Abstractive Summarization
+	Models:
+	BART
+	PEGASUS
+	T5
+	Gemini
+	Llama
+
+	Understand why LLMs perform abstractive summarization.
+
+5. Hugging Face Ecosystem
+Pipelines
+Tokenizer
+AutoTokenizer
+AutoModel
+Model Hub
+Datasets
+Inference
+
+Explore models such as :
+	BART
+	T5
+	PEGASUS
+
+6. LangChain
+Study:
+Document Loaders
+Text Splitters
+Prompt Templates
+Chains
+Output Parsers
+
+For this project, the most important component is:
+RecursiveCharacterTextSplitter
+
+7. Evaluation Metrics
+Study:
+
+i. ROUGE
+Measures overlap with reference summaries.
+
+ii. BLEU
+Originally designed for translation but sometimes used for summarization.
+
+iii. BERTScore
+Uses contextual embeddings to measure semantic similarity.
+
+iv. Human Evaluation
+	Evaluate based on:
+		Fluency
+		Coherence
+		Factual correctness
+		Coverage

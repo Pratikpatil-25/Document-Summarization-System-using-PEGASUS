@@ -1,0 +1,88 @@
+DOCUMENT-SUMMARIZATION-SYSTEM
+│
+├── .github/
+│   └── workflows/
+│       └── cicd.yaml
+│
+├── .venv/
+│
+├── artifacts/
+│   ├── uploaded_documents/
+│   ├── extracted_text/
+│   ├── cleaned_text/
+│   ├── chunks/
+│   ├── summaries/
+│   ├── final_output/
+│   └── logs/
+│
+├── config/
+│   └── config.yaml
+│
+├── logs/
+│   └── running_logs.log
+│
+├── research/
+│   ├── 01_document_ingestion.ipynb
+│   ├── 02_text_extraction.ipynb
+│   ├── 03_preprocessing.ipynb
+│   ├── 04_chunking.ipynb
+│   ├── 05_summarization.ipynb
+│   ├── 06_postprocessing.ipynb
+│   ├── experiment.ipynb
+│   └── sample_documents/
+│
+├── src/
+│   └── summarizer/
+│
+│       ├── components/
+│       │
+│       │   ├── document_ingestion.py
+│       │   ├── document_validation.py
+│       │   ├── text_extraction.py
+│       │   ├── preprocessing.py
+│       │   ├── chunking.py
+│       │   ├── summarizer.py
+│       │   ├── postprocessing.py
+│       │   ├── keyword_extraction.py
+│       │   ├── topic_extraction.py
+│       │   └── evaluation.py
+│       │
+│       ├── config/
+│       │     configuration.py
+│       │
+│       ├── constants/
+│       │     __init__.py
+│       │
+│       ├── entity/
+│       │     config_entity.py
+│       │
+│       ├── logging/
+│       │
+│       ├── pipeline/
+│       │
+│       │     stage_01_document_ingestion.py
+│       │     stage_02_document_validation.py
+│       │     stage_03_text_extraction.py
+│       │     stage_04_preprocessing.py
+│       │     stage_05_chunking.py
+│       │     stage_06_summarization.py
+│       │     stage_07_postprocessing.py
+│       │     stage_08_export.py
+│       │
+│       ├── utils/
+│       │     common.py
+│       │     file_utils.py
+│       │
+│       └── __init__.py
+│
+├── templates/
+│
+├── static/
+│
+├── app.py
+├── main.py
+├── schema.yaml
+├── params.yaml
+├── requirements.txt
+├── setup.py
+└── README.md
