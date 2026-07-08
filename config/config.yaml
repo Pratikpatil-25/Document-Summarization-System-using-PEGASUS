@@ -1,0 +1,7 @@
+artifacts_root : artifacts
+
+document_ingestion:
+  root_dir: artifacts/document_ingestion
+  upload_dir: artifacts/document_ingestion/uploaded_files
+  supported_extensions: [".pdf", ".docx", ".txt"]
+
