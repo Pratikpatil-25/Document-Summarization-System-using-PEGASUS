@@ -1,4 +1,3 @@
-import os
 from src.summarizer.utils.common import create_directories
 from src.summarizer.logging import logger
 from src.summarizer.utils.common import get_size

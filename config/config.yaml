@@ -5,3 +5,10 @@ document_ingestion:
   upload_dir: artifacts/document_ingestion/uploaded_files
   supported_extensions: [".pdf", ".docx", ".txt"]
 
+document_validation:
+  root_dir: artifacts/document_validation
+  valid_dir: artifacts/document_validation/valid_files
+  invalid_dir: artifacts/document_validation/invalid_files
+  supported_extensions: [".pdf", ".docx", ".txt"]
+  max_file_size_mb: 25
+  min_words: 250

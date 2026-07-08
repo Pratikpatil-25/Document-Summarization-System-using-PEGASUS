@@ -6,3 +6,13 @@ class DocIngestionConfig:
   root_dir: Path
   upload_dir: Path
   supported_extensions: list[str]
+
+@dataclass(frozen = True)
+class DocValidationConfig:
+  root_dir: Path
+  valid_dir: Path
+  invalid_dir: Path
+  supported_extensions: list[str]
+  max_file_size_mb: int
+  min_words: int
+

@@ -1,6 +1,6 @@
 from src.summarizer.constants import *
 from src.summarizer.utils.common import read_yaml, create_directories
-from src.summarizer.entity.config_entity import DocIngestionConfig
+from src.summarizer.entity.config_entity import DocIngestionConfig, DocValidationConfig
 from pathlib import Path
 
 class ConfigurationManager:
@@ -29,3 +29,19 @@ class ConfigurationManager:
         )
 
         return doc_ingestion_config
+    
+    def get_doc_validation_config(self) -> DocValidationConfig:
+        config = self.config.document_validation
+
+        create_directories([config.root_dir, config.valid_dir, config.invalid_dir])
+
+        doc_validation_config = DocValidationConfig(
+            root_dir=Path(config.root_dir),
+            valid_dir=Path(config.valid_dir),
+            invalid_dir=Path(config.invalid_dir),
+            supported_extensions=config.supported_extensions,
+            max_file_size_mb=config.max_file_size_mb,
+            min_words=config.min_words
+        )
+
+        return doc_validation_config
