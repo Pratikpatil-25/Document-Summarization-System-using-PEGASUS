@@ -90,15 +90,17 @@ Display Final Summary
 Document-Summarization-System/
 │
 ├── app.py
-├── config/
+├── research/
 ├── artifacts/
 ├── src/
-│   ├── components/
-│   ├── config/
-│   ├── constants/
-│   ├── entity/
-│   ├── pipeline/
-│   └── utils/
+|   └── summarizer/
+│       ├── components/
+│       ├── config/
+│       ├── constants/
+│       ├── entity/
+│       ├── pipeline/
+        ├── logging/
+│       └── utils/
 │
 ├── templates/
 │      └── index.html
@@ -108,9 +110,11 @@ Document-Summarization-System/
 │      ├── js/
 │      └── images/
 │
+├── Dockerfile
 ├── params.yaml
 ├── schema.yaml
-├── config.yaml
+├── config/
+|      ├──config.yaml
 ├── requirements.txt
 └── README.md
 ```
